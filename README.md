@@ -7,11 +7,22 @@ hack jaipur submission repository
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/TDy1zCTIUDQ/0.jpg)](https://www.youtube.com/watch?v=TDy1zCTIUDQ)
 
+----
+
 ### video demo of project
 
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/-twIfnvzwsc/0.jpg)](http://www.youtube.com/watch?v=-twIfnvzwsc)
 
-images
+----
+
+### samples images
+
+![alt text](https://github.com/Rishikesh-12/hack-jaipur/blob/master/sample1.png "sample 1")
+
+![alt text](https://github.com/Rishikesh-12/hack-jaipur/blob/master/sample2.png "sample 2")
+
+----
+
 
 Using 
 -python 
