@@ -5,22 +5,13 @@
 import cv2, time, pandas
 from datetime import datetime
 
-
-from playsound import playsound
-playsound('audio.mp3')
-# from pydub import AudioSegment
-# from pydub.playback import play
-
-# song = AudioSegment.from_wav("swiftly.mp3")
-# play(song)
-
 first_frame=None
 status_list=[None,None]
 times=[]
 df=pandas.DataFrame(columns=["Start","End"])
 
 video=cv2.VideoCapture(0)
-
+ 
 while True:
     check, frame = video.read()
     status=0
@@ -39,10 +30,9 @@ while True:
 
     for contour in cnts:
         if cv2.contourArea(contour) < 10000:
-            
             continue
         status=1
-        
+
         (x,y,w,h)=cv2.boundingRect(contour)
         cv2.rectangle(frame, (x,y), (x+w, y+h), (230,230,0),3)
     status_list.append(status)
@@ -56,9 +46,6 @@ while True:
         times.append(datetime.now())
 
 
-    # cv2.imshow("capturing gray frame",gray)
-    # cv2.imshow("capturing blur frame",delta_frame)
-    # cv2.imshow("capturing threshold frame",thresh_frame)
     cv2.imshow("Detecting Your Motion", frame)
     
     key=cv2.waitKey(1)

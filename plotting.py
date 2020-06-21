@@ -6,10 +6,6 @@ from main import df
 from bokeh.plotting import  figure, show, output_file
 from bokeh.models import HoverTool , ColumnDataSource
 
-from playsound import playsound
-playsound('audio.mp3')
-
-
 df["Start_string"]=df["Start"].dt.strftime("%H:%M:%S %D-%M-%Y")
 df["End_string"]=df["End"].dt.strftime("%H:%M:%S %D-%M-%Y")
 
@@ -24,7 +20,6 @@ hover=HoverTool(tooltips=[("Start","@Start_string"),("End","@End_string")])
 p.add_tools(hover)
 
 q=p.quad(left="Start",right="End",bottom=0,top=1,color="orange",source=cds)
-
 output_file=("Log.html")
 
 show(p)
