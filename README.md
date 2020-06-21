@@ -3,9 +3,12 @@ hack jaipur submission repository
 ----
 ## Team Name : TechStars
 
-video of Ocatocat submission
+### video of Ocatocat submission
+
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/TDy1zCTIUDQ/0.jpg)](https://www.youtube.com/watch?v=TDy1zCTIUDQ)
-video demo of project
+
+### video demo of project
+
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/-twIfnvzwsc/0.jpg)](http://www.youtube.com/watch?v=-twIfnvzwsc)
 
 images
